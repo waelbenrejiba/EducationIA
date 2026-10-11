@@ -18,7 +18,7 @@ class EvenementSerializer(serializers.ModelSerializer):
             'id', 'titre', 'description', 'lieu', 
             'start_at', 'end_at', 'user_id', 'created_by', 'user_details'
         ]
-        # 🔄 On passe 'created_by' en lecture seule au lieu de supervisor
+      
         read_only_fields = ['created_by']
 
     def get_user_details(self, obj):
